@@ -7,21 +7,23 @@
     <title>heart</title>
     <style>
         .heart {
+            height: 100vh;
             display: flex;
             justify-content: center;
+            align-items: center;
         }
         .container {
             display: inline-block;
             position: relative;
-            margin-top: 200px;
-            animation: beat 0.5s infinite alternate-reverse;
+            border: 1px solid black;
+            /* animation: beat 0.5s infinite alternate-reverse; */
         }
         .left {
             background: red;
             width: 100px;
             height: 100px;
             position: absolute;
-            bottom: 0;
+            bottom: 100px;
             left: -100px;
             transform: rotate(45deg) translateX(72px);
             border-radius: 50% 0 0 50%;
@@ -31,7 +33,7 @@
             width: 100px;
             height: 100px;
             position: absolute;
-            bottom: 0;
+            bottom: 100px;
             left: 100px;
             transform: rotate(45deg) translateY(72px);
             border-radius: 50% 50% 0 0;
@@ -40,7 +42,6 @@
             background: red;
             width: 100px;
             height: 100px;
-            position: absolute;
             transform: rotate(45deg);
         }
         @keyframes beat {
