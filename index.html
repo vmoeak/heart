@@ -10,7 +10,7 @@
             display: inline-block;
             position: relative;
             margin: 200px;
-            animation: beat 10ms infinite alternate;
+            animation: beat 0.5s infinite alternate-reverse;
         }
         .left {
             background: red;
@@ -40,11 +40,11 @@
             transform: rotate(45deg);
         }
         @keyframes beat {
-            50% {
-                transform: scale(1.2)
+            0% {
+                transform: scale(1.0)
             }
             100% {
-                transform: scale(1.4);
+                transform: scale(1.2);
             }
         }
     </style>
